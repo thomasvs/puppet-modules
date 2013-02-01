@@ -7,7 +7,7 @@ Updated::  February 2012
 
 = Requirements
 
-This module requires the apache-httpd and php modules for the server part,
+This module requires the apache_httpd and php modules for the server part,
 though they can be disabled.
 
 The plugin packages used for RHEL with selinux enabled should have the

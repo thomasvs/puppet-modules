@@ -4,7 +4,7 @@
     <%= opt %>
 <% end -%>
     postrotate
-<% if operatingsystem =~ /^(Fedora|RedHat|CentOS)$/ -%>
+<% if scope.lookupvar('::operatingsystem') =~ /^(Fedora|RedHat|CentOS)$/ -%>
         /sbin/service httpd reload > /dev/null 2>/dev/null || true
 <% else -%>
         /bin/kill -HUP `cat /var/run/httpd.pid 2>/dev/null` 2>/dev/null || true
